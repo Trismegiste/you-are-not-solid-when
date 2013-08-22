@@ -14,8 +14,12 @@ Now you know it is time for a meme picture :smile:
  * [Liskov substitution principle][3]
  * [Interface segregation principle][4]
  * [Single responsibility principle][5]
+ * [Dependency inversion principle][6]
+ * [Open/closed principle][7]
 
 [1]: http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)
 [3]: ./LSP/README.md
 [4]: ./ISP/README.md
 [5]: ./SRP/README.md
+[6]: ./DIP/README.md
+[7]: ./OCP/README.md

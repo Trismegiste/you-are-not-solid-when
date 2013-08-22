@@ -1,7 +1,7 @@
 ## [Open/closed principle][1]
 
 Difficult to follow, because you have to be prescient. It's hard to know
-what will change or won't, even with good experience.
+what will change in a future release and what won't, even with good experience.
 
 Design patterns are welcome here, they solve many problems for you.
 
@@ -27,6 +27,10 @@ abstract class Service {
     abstract protected function specialBehavior();
 }
 ```
+
+With this pattern, you follow the Hollywood principe and it's easy to unit test
+the abstract template without customer concerns and to code and test only customer concerns
+in a separate clas.
 
 [1]: http://en.wikipedia.org/wiki/Open/closed_principle
 [2]: http://en.wikipedia.org/wiki/Template_method
