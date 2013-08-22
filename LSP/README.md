@@ -1,7 +1,7 @@
-# [Liskov substitution principle][3]
+## [Liskov substitution principle][3]
 
 To me, Liskov is the most important principle in SOLID. Mainly because, it can
-be break in many ways, not just one or two.
+be broken in many ways, not just one or two.
 
 The typical violation known as "[Circle-ellipse problem][2]" is too abstract to be
 encountered in real-life coding.
