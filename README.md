@@ -8,6 +8,8 @@ In this repo, I'll give you some (real-life or not) samples of what not to do.
 
 Now you know it is time for a meme picture :smile:
 
+![dash](./dash.jpg)
+
 ## Five principles
  * [Liskov substitution principle][3]
  * [Interface segregation principle][4]
