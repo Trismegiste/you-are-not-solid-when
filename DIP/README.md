@@ -24,4 +24,8 @@ public function __construct(StrategyInterface $strat)
 
 A note about using a singleton instead of "new" : it is a bad pratice too.
 
+You should use design patterns like factory method, abstract factory and/or
+Dependency injection container like [Pimple][2].
+
 [1]: http://en.wikipedia.org/wiki/Dependency_inversion_principle
+[2]: http://pimple.sensiolabs.org/
