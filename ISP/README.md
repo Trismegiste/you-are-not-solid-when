@@ -31,7 +31,7 @@ public function getTotal(\Iterator $listing)
 {
     $sum = 0;
     foreach($listing as $row) {
-        $sum += $row->getPrice()
+        $sum += $row->getPrice();
     }
 
     return $sum;

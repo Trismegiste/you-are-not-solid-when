@@ -13,7 +13,9 @@ Now you know it is time for a meme picture :smile:
 ## Five principles
  * [Liskov substitution principle][3]
  * [Interface segregation principle][4]
+ * [Single responsibility principle][5]
 
 [1]: http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)
 [3]: ./LSP/README.md
 [4]: ./ISP/README.md
+[5]: ./SRP/README.md
