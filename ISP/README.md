@@ -1,23 +1,25 @@
 ## [Interface segregation principle][1]
 
-To me, this principle is the second important because it is an very effective
-way to design loose coupled system.
+To me, this principle is the second important because it is a **very effective
+way to design loose coupled system**. Plus, it doesn't have performance issues.
 
-Unlike LSP, ISP can be resumed in one phrase as "OOP is not a social network".
+Unlike LSP, ISP can be resumed in one phrase as "OOP is not facebook".
 But there is a big prerequisite : you must have interfaces everywhere.
 
 ![ISP](./everywhere.jpg)
 
-Objects are socially akward, they don't want attachment to many people 
+**Objects are socially akward**, they don't want attachment to many people 
 and they don't want to deeply know their friends. Just the bare minimum to
-follow the contract they need.
+follow the contract they need, everything else does not concern them.
+
+### A bad practice
 
 ```php
 public function getTotal(\SplFixedArray $listing)
 {
     $sum = 0;
     foreach($listing as $row) {
-        $sum += $row->getPrice()
+        $sum += $row->getPrice();
     }
 
     return $sum;
@@ -25,6 +27,8 @@ public function getTotal(\SplFixedArray $listing)
 ```
 
 Why using a SplFixedArray if we just need to traverse the array ?
+
+### A good practice
 
 ```php
 public function getTotal(\Iterator $listing)
@@ -38,7 +42,10 @@ public function getTotal(\Iterator $listing)
 }
 ```
 
-Much better. If you have big interface, you know there is something wrong
+Since SplFixedArray inherits from Iterator, we "segregate" its type-hint to the 
+minimum interface.
+
+If you have big interface, you know there is something wrong
 with your design.
 
 If you can't break your interface, then you might have some problem with SRP.

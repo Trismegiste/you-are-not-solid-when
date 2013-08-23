@@ -1,9 +1,13 @@
 ## [Open/closed principle][1]
 
-Difficult to follow, because you have to be prescient. It's hard to know
+Difficult to follow it, because you have to be prescient. It's hard to know
 what will change in a future release and what won't, even with good experience.
 
-Design patterns are welcome here, they solve many problems for you.
+**Design patterns** are welcome here, they solve many problems for you.
+
+### A bad practice
+
+Imagine you have a service :
 
 ```php
 class Service {
@@ -13,7 +17,11 @@ class Service {
 }
 ```
 
-The most common case is the [template method design pattern][2].
+And imagine not all the code inside could evolve, only a small part. 
+
+### A good practice
+
+The most common solution is the [template method design pattern][2].
 
 ```php
 abstract class Service {
@@ -28,9 +36,11 @@ abstract class Service {
 }
 ```
 
-With this pattern, you follow the Hollywood principe and it's easy to unit test
+With this pattern, you follow the Hollywood principle and it's easy to unit test
 the abstract template without customer concerns and to code and test only customer concerns
-in a separate clas.
+in separate classes.
+
+You could also use Strategy, Bridge, Adapter, Decorator, all Behavioral patterns.
 
 [1]: http://en.wikipedia.org/wiki/Open/closed_principle
 [2]: http://en.wikipedia.org/wiki/Template_method
