@@ -23,17 +23,14 @@ To be clear :
 Make simple objects. My personal guidances are :
 (from the most important to the less, there are always exceptions)
 
- 0) Strong type-hinting : it helps to define strict responsibilities
- 1) **No class longer than 100 NCLOC** (non comment line of code)
- 2) No method longer than 20 NCLOC
- 3) No more than 5 public methods per class
- 4) No more than 5 methods per class
- 5) No "switch" because it is hidden inheritance
- 6) No more "if(is_null($obj))" => Null Object Pattern
- 7) No "if" for 2 behaviors => subclasses or State Pattern
- 8) No "new" except in Creational Patterns (factories, builders etc...)
- 9) No more "return null" for error => throw an exception
- 10) Constructor with mandatory parameters for the class
+ 0. Strong type-hinting : it helps to define strict responsibilities
+ 1. **No class longer than 100 NCLOC** (non comment line of code)
+ 2. No method longer than 20 NCLOC
+ 3. No more than 5 public methods per class
+ 4. No more than 5 methods per class
+ 5. No "switch" because it is hidden inheritance
+ 8. No "new" except in Creational Patterns (factories, builders etc...)
+ 9. No more "return null" for error => throw an exception
  
 It means for example I can tolerate a class with 15 methods if only five are public, 
 or I could have a 50 NCLOC method if there is only one in this class 

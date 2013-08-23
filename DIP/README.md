@@ -18,9 +18,9 @@ public function __construct()
 The birth of a new object is a critical moment. Don't do it casually. When
 you're typing "new", be sure it means your code cannot evolve.
 
-About using a **singleton** instead of "new" : it is a bad pratice too.
+About using a **singleton** or a **static factory** instead of "new" : it is a bad pratice too.
 You can't extend this code without breaking it and you can't mockup the delegation
-in unit tests. Forget about singletons : static means "cannot evolve" by definition.
+in unit tests. "Static" means "cannot evolve" by definition.
 
 ### A good practice
 
