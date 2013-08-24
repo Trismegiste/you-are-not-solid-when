@@ -41,7 +41,7 @@ function driving(Vehicle $vehicle)
 
 Second, you have failed because you cannot safely substitute any subclasses of Vehicle
 by another because of "special case" Car (instanceof). Unit tests get hard because
-mockup are not straitforward.
+mockup are not straightforward.
 
 But you can do worse :
 

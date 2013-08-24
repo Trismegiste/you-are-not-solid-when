@@ -17,9 +17,14 @@ Now you know it is time for a meme picture :smile:
  * [Dependency inversion principle][6]
  * [Open/closed principle][7]
 
+## Self promotion
+I have made an analysis tool named [Mondrian][9] to find some problems with 
+SOLID (and Demeter's Law) and help to refactor coupled code.
+
 [1]: http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)
 [3]: ./LSP/README.md
 [4]: ./ISP/README.md
 [5]: ./SRP/README.md
 [6]: ./DIP/README.md
 [7]: ./OCP/README.md
+[9]: https://github.com/Trismegiste/Mondrian

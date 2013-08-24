@@ -37,10 +37,13 @@ abstract class Service {
 ```
 
 With this pattern, you follow the Hollywood principle and it's easy to unit test
-the abstract template without customer concerns and to code and test only customer concerns
-in separate classes.
+the abstract template without customer concerns. Business logic for customer
+(the part that varies a lot) is in a separate class. The same for unit tests.
 
 You could also use Strategy, Bridge, Adapter, Decorator, all Behavioral patterns.
+
+A simple principle is : if there is something that frequently evolves or changes, 
+do it in a subclass or with delegation (most of the GoF patterns are following this guideline)
 
 [1]: http://en.wikipedia.org/wiki/Open/closed_principle
 [2]: http://en.wikipedia.org/wiki/Template_method

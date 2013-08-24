@@ -8,7 +8,7 @@ But there is a big prerequisite : you must have interfaces everywhere.
 
 ![ISP](./everywhere.jpg)
 
-**Objects are socially akward**, they don't want attachment to many people 
+**Objects are socially awkward**, they don't want attachment to many people 
 and they don't want to deeply know their friends. Just the bare minimum to
 follow the contract they need, everything else does not concern them.
 
@@ -26,7 +26,7 @@ public function getTotal(\SplFixedArray $listing)
 }
 ```
 
-Why using a SplFixedArray if we just need to traverse the array ?
+Why using a **SplFixedArray** if we just need to traverse the array ?
 
 ### A good practice
 
